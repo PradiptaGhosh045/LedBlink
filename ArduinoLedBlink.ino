@@ -8,7 +8,7 @@ void setup()
 
 void loop()
 {
-  LedState !=LedState; // It will toggle the Led State
+  LedState =~LedState; // It will toggle the Led State
   digitalWrite(Led, LedState);
   delay(1000);  
 }
