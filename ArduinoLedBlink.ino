@@ -1,14 +1,14 @@
-const int Led = 13;
+const int LedPin = 13;
 int LedState = 0;
 void setup()
 {
-  pinMode(Led, OUTPUT);
-  digitalWrite(Led, LedState);
+  pinMode(LedPin, OUTPUT);
+  digitalWrite(LedPin, LedState);
 }
 
 void loop()
-{
-  LedState =~LedState; // It will toggle the Led State
-  digitalWrite(Led, LedState);
+{  
+  LedState =~LedState;
+  digitalWrite(LedPin, LedState);// It will toggle the Led State
   delay(1000);  
 }
